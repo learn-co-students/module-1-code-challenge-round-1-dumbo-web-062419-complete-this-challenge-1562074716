@@ -24,7 +24,7 @@ class Restaurant
   def average_star_rating
     # - returns the average star rating for a restaurant based on its reviews
     review_array = reviews
-    review_array.sum{|review| review.rating} / review_array.length
+    review_array.sum{|review| review.rating} / review_array.length.to_f
   end
 
   def longest_review
